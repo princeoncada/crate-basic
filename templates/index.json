@@ -1,0 +1,48 @@
+{
+	"sections": {
+		"hero-banner": {
+			"type": "a-custom-hero-banner",
+			"settings": {
+				"title": "Hero Banner"
+			}
+		},
+		"main-products": {
+			"type": "a-custom-main-products",
+			"settings": {
+				"title": "Main Products"
+			}
+		},
+		"multi-row": {
+			"type": "a-custom-multi-row",
+            "settings": {
+                "title": "Multi-Row"
+            }
+		},
+		"features": {
+			"type": "a-custom-features",
+			"settings": {
+				"title": "Features"
+			}
+		},
+		"rich-text": {
+			"type": "a-custom-rich-text",
+			"settings": {
+                "title": "Rich Text"
+            }
+		},
+		"call-to-action": {
+			"type": "a-custom-call-to-action",
+            "settings": {
+                "title": "Call to Action"
+            }
+		}
+	},
+	"order": [
+		"hero-banner",
+		"main-products",
+		"multi-row",
+		"features",
+		"rich-text",
+		"call-to-action"
+	]
+}
