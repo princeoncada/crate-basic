@@ -1,5 +1,16 @@
-<section>
-    <div class="flex flex-row justify-center items-center">
-        <div>CALL TO ACTION</div>
+<style>
+    .bg-cta {
+        background: url({{ 'bg-cta.png' |  asset_img_url: '2880x1012' }});
+        background-size: 103%;
+    }
+</style>
+
+<section class="bg-cta">
+    <div class="x-flex x-flex-row x-justify-center x-items-center x-max-w-[1440px] x-mx-auto x-py-[144px]">
+        <div class="x-flex x-flex-col x-gap-[20px] x-text-center x-text-white">
+            <h1 class="x-font-lora x-text-white x-text-[40px] x-font-light x-leading-[48px]">Design innovation begins <br>with a world of inspiration</h1>
+            <p class="x-font-light x-text-[26px] x-leading-[32px]">View our lifestyle gallery</p>
+            <button class="x-mx-auto x-bg-white x-text-[#3D3E49] x-font-medium x-text-[18px] x-leading-[24px] x-tracking-[3%] x-px-[24px] x-py-[18px] x-rounded-[8px]">VIEW GALLERY</button>
+        </div>
     </div>
 </section>
