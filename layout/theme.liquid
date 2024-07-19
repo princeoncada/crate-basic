@@ -300,37 +300,7 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% section 'a-custom-announcement-bar' %}
-
-    <header class="x-bg-[rgb(255,255,255)] x-sticky x-top-0 x-z-[9999]">
-        <div class="">
-            <div class="x-absolute x-flex x-w-full x-justify-center x-items-center x-h-full">
-                <a href="/">{% render 'a-crate-logo' %}</a>
-            </div>
-            <div
-                class="x-flex x-flex-row x-justify-between x-items-center x-px-[104px] x-leading-6 x-py-[24px] x-max-w-[1440px] x-mx-auto x-w-full">
-                <div class="x-flex x-flex-row x-gap-4 x-relative x-z-[2]">
-                    <a href="/">STORY</a>
-                    <a href="/">PRODUCTS</a>
-                    <a href="/">LIFESTYLE</a>
-                    <a href="/">BLOG</a>
-                </div>
-                <div class="x-flex x-flex-row x-gap-5 x-relative x-z-[2]">
-                    <a href="{{ routes.cart_url }}"
-                        class="x-whitespace-nowrap x-text-base x-text-gray-500 x-hover:text-gray-900">
-                        {% render 'icon-shopping-bag' %}
-                    </a>
-                    <a href="{{ routes.account_login_url }}" class="x-text-base x-text-gray-500 x-hover:text-gray-900">
-                        {% render 'icon-user' -%}
-                    </a>
-                    <button class="x-text-base x-text-gray-500 x-hover:text-gray-900">
-                        {% render 'icon-search' -%}
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
