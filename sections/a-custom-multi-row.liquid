@@ -1,16 +1,54 @@
-<section>
-    <div class="flex flex-col justify-center items-center">
-        <div class="flex flex-row justify-center items-center gap-10">
-            <div>IMAGE</div>
-            <div>CONTENT</div>
+<style>
+    .sleek-simple-extraordinary-img {
+        background: url({{ 'multi-row-img-1.png' |  asset_img_url: '1000x1000' }});
+        background-size: 100%;
+        background-position: 50% 90%;
+    }
+
+    .gift-essentials-img {
+        background: url({{ 'multi-row-img-2.png' |  asset_img_url: '1000x1000' }});
+        background-size: 110%;
+        background-position: 50% 100%;
+    }
+
+    .switch-over-img {
+        background: url({{ 'multi-row-img-3.png' |  asset_img_url: '1000x1000' }});
+        background-size: 100%;
+        background-position: 50% 70%;
+    }
+</style>
+
+<section class="bg-[#FFFFFF]">
+    <div class="flex flex-col justify-center items-center max-w-[1440px] mx-auto">
+        <div class="flex flex-row justify-center items-center bg-[#F6EEE1] w-full">
+            <div class="w-1/2 sleek-simple-extraordinary-img h-[566px]">
+            </div>
+            <div class="w-1/2 pl-[56px]">
+                <div class="w-[560px] flex flex-col gap-6">
+                    <h1 class="font-lora font-light text-[40px] leading-[48px]">Sleek. Simple. Extraordinary</h1>
+                    <p class="font-light text-[24px] leading-[32px]">Ditch your clunky, breakable tissue covers for something better.</p>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-row-reverse justify-center items-center gap-10">
-            <div>IMAGE</div>
-            <div>CONTENT</div>
+        <div class="flex flex-row-reverse justify-center items-center bg-[#ECEFF2] w-full">
+            <div class="w-1/2 gift-essentials-img h-[566px]">
+            </div>
+            <div class="w-1/2 flex flex-row justify-end pr-[56px]">
+                <div class="w-[560px] flex flex-col gap-6">
+                    <h1 class="font-lora font-light text-[40px] leading-[48px]">Gift Essentials.</h1>
+                    <p class="font-light text-[24px] leading-[32px]">Choose a housewarming gift, get well wish, <br>or self-care purchase.</p>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-row justify-center items-center gap-10">
-            <div>IMAGE</div>
-            <div>CONTENT</div>
+        <div class="flex flex-row justify-center items-center bg-[#F6E6DE] w-full">
+            <div class="w-1/2 switch-over-img h-[566px]">
+            </div>
+            <div class="w-1/2 pl-[56px]">
+                <div class="w-[560px] flex flex-col gap-6">
+                    <h1 class="font-lora font-light text-[40px] leading-[48px]">Switch Over.</h1>
+                    <p class="font-light text-[24px] leading-[32px]">Small changes make a big impact.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
