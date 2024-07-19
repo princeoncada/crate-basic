@@ -1,5 +1,27 @@
+<style>
+    .hero-bg {
+        background-color: black;
+        background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+        url({{ 'bg-hero.jpeg' | asset_img_url: "1415x1070" }});
+        background-size: 100%;
+        background-position: 50% 80%;
+    }
+</style>
+
 <section>
-    <div class="flex flex-row justify-center items-center">
-        ERGONOMIC DESIGN FOR HOME AND OFFICE
+    <div class="flex flex-row justify-center items-end hero-bg h-[700px] pb-40">
+        <div class="flex flex-col font-lora text-[56px] text-white text-center gap-[28px]">
+            <div class="flex flex-row justify-center gap-8">
+                <div>
+                    {% render 'a-hero-house' %}
+                </div>
+                <div>
+                    {% render 'a-hero-desktop' %}
+                </div>
+            </div>
+            <div class="leading-[64px] font-light">
+                ERGONOMIC DESIGN FOR <br>HOME AND OFFICE
+            </div>
+        </div>
     </div>
 </section>
