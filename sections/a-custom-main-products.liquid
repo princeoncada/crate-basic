@@ -1,6 +1,90 @@
-<section>
-    <div class="flex flex-row justify-center items-center">
-        <div>PRODUCT 1</div>
-        <div>PRODUCT 2</div>
+<style>
+    .main-rect {
+        background: url({{ 'main-rect.jpeg' |  asset_img_url: "1967x1967" }});
+        background-size: cover;
+    }
+
+    .main-square {
+        background: url({{ 'main-square.jpeg' |  asset_img_url: "3000x3000" }});
+        background-size: cover;
+    }
+</style>
+
+<section class="bg-[#FFFFFF]">
+    <div class="flex flex-row justify-center items-center max-w-[1440px] mx-auto gap-20 pt-20 pb-[104px]">
+
+        <div class="flex flex-col gap-8 max-w-[474px]">
+            <div class="flex flex-row justify-center">
+                <div class="w-[440px] h-[392px] main-rect">
+                </div>
+            </div>
+            <div class="flex flex-col gap-12">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-6">
+                        <h1 class="font-lora font-light text-[36px] leading-[48px] text-[#3D3E49]">Rectangular Tissue Sleeve
+                        </h1>
+                        <p class="font-jost font-light text-[19px] leading-10 text-[#282828]">Each product is crafted with home and
+                            office in mind, utilizing some of the
+                            simplest innovations with extreme attention to detail. Follow our design journey and adopt one
+                            of our designs for your favorite nooks.</p>
+                    </div>
+                    <div class="flex flex-col gap-[14px]">
+                        <p class="font-jost text-[18px] leading-7 text-[#4F4F4F]">Available in all 5 colors.</p>
+                        <div class="flex flex-row gap-4">
+                            <div class="w-10 h-10 bg-[#2A2A2A] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#7C7C7C] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#C6C6C6] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#C1AC88] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#B1795D] rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="text-lg text-white bg-[#3D3E49] font-medium tracking-[3%] rounded-lg py-[18px]">
+                    BUY
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-8 max-w-[474px]">
+            <div class="flex flex-row justify-center">
+                <div class="w-[440px] h-[392px] main-square">
+                </div>
+            </div>
+            <div class="flex flex-col gap-12">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-6">
+                        <h1 class="font-lora font-light text-[36px] leading-[48px] text-[#3D3E49]">Square Tissue Sleeve
+                        </h1>
+                        <p class="font-jost font-light text-[19px] leading-10 text-[#282828]">Each product is crafted with home and
+                            office in mind, utilizing some of the
+                            simplest innovations with extreme attention to detail. Follow our design journey and adopt one
+                            of our designs for your favorite nooks.</p>
+                    </div>
+                    <div class="flex flex-col gap-[14px]">
+                        <p class="font-jost text-[18px] leading-7 text-[#4F4F4F]">Available in all 5 colors.</p>
+                        <div class="flex flex-row gap-4">
+                            <div class="w-10 h-10 bg-[#2A2A2A] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#7C7C7C] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#C6C6C6] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#C1AC88] rounded-full">
+                            </div>
+                            <div class="w-10 h-10 bg-[#B1795D] rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="text-lg text-white bg-[#3D3E49] font-medium tracking-[3%] rounded-lg py-[18px]">
+                    BUY
+                </button>
+            </div>
+        </div>
     </div>
 </section>
