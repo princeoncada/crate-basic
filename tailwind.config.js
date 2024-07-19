@@ -9,7 +9,10 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-
+            fontFamily: {
+                'jost': ['Jost'],
+                'lora': ['Lora'],
+            },
 		},
 	},
 	plugins: [],
