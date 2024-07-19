@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    prefix: 'x-',
 	important: true,
 	content: [
 		"./**/*.liquid",
