@@ -40,6 +40,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header__menu-item {padding: 8px;}"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
