@@ -1,16 +1,41 @@
 <style>
     .bg-cta {
         background: url({{ 'bg-cta.png' |  asset_img_url: '2880x1012' }});
-        background-size: 103%;
+        background-size: 104%;
+        background-position: 50% 50%;
+    }
+
+    @media (max-width: 1280px) {
+        .bg-cta {
+            background-size: 150%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .bg-cta {
+            background-size: 200%;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .bg-cta {
+            background-size: 350%;
+        }
+    }
+
+    @media (max-width: 390px) {
+        .bg-cta {
+            background-size: 400%;
+        }
     }
 </style>
 
 <section class="bg-cta">
-    <div class="x-flex x-flex-row x-justify-center x-items-center x-max-w-[1440px] x-mx-auto x-py-[144px]">
-        <div class="x-flex x-flex-col x-gap-[20px] x-text-center x-text-white">
-            <h1 class="x-font-lora x-text-white x-text-[40px] x-font-light x-leading-[48px]">Design innovation begins <br>with a world of inspiration</h1>
-            <p class="x-font-light x-text-[26px] x-leading-[32px]">View our lifestyle gallery</p>
-            <button class="x-mx-auto x-bg-white x-text-[#3D3E49] x-font-medium x-text-[18px] x-leading-[24px] x-tracking-[3%] x-px-[24px] x-py-[18px] x-rounded-[8px]">VIEW GALLERY</button>
+    <div class="x-flex x-flex-row x-justify-center x-items-center x-mx-auto x-py-[144px]">
+        <div class="x-flex x-flex-col x-gap-[24px] x-text-center x-text-white">
+            <h1 class="x-text-white x-text-[24px] mdt:x-text-[40px] x-font-light x-leading-[32px] mdt:x-leading-[48px]">Design innovation begins <br>with a world of inspiration</h1>
+            <p class="x-font-light x-text-[18px] mdt:x-text-[24px] x-leading-[24px] mdt:x-leading-[32px]">View our lifestyle gallery</p>
+            <button class="x-mx-auto x-bg-white x-text-[#3D3E49] x-font-medium x-text-[16px] mdt:x-text-[18px] x-leading-[24px] x-tracking-[3%] x-px-[24px] x-py-[18px] x-rounded-[8px]">VIEW GALLERY</button>
         </div>
     </div>
 </section>

@@ -16,10 +16,38 @@
         background-size: 100%;
         background-position: 50% 70%;
     }
+
+    @media (max-width: 425px) {
+        .sleek-simple-extraordinary-img {
+            background-size: 182%;
+            background-position: 60% 83%;
+        }
+
+        .gift-essentials-img {
+            background-size: 200%;
+            background-position: 42% 98%;
+        }
+
+        .switch-over-img {
+            background-size: 120%;
+            background-position: 50% 70%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .sleek-simple-extraordinary-img {
+            background-position: 60% 80%;
+        }
+
+        .gift-essentials-img {
+            background-size: 200%;
+            background-position: 36% 96%;
+        }
+    }
 </style>
 
 <section class="x-bg-[#FFFFFF]">
-    <div class="x-flex x-flex-col x-justify-center x-items-center x-max-w-[1440px] x-mx-auto">
+    <div class="lg:x-flex x-hidden x-flex-col x-justify-center x-items-center x-mx-auto">
         <div class="x-flex x-flex-row x-justify-center x-items-center x-bg-[#F6EEE1] x-w-full">
             <div class="x-w-1/2 sleek-simple-extraordinary-img x-h-[566px]">
             </div>
@@ -50,5 +78,41 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="x-flex lg:x-hidden x-flex-col x-text-center">
+        <div class="x-flex x-flex-col x-justify-center x-items-center x-bg-[#F6EEE1] x-w-full">
+            <div class="x-w-full sleek-simple-extraordinary-img x-h-[440px] mdt:x-h-[566px]">
+            </div>
+            <div class="x-w-full">
+                <div class="x-flex x-flex-col x-gap-[8px] mdt:x-gap-[24px] x-py-[32px] x-pb-[72px] mdt:x-py-[64px] mdt:x-pb-[64px]">
+                    <h1 class="x-font-light x-text-[24px] mdt:x-text-[40px] x-leading-[32px] mdt:x-leading-[48px] x-text-[#3D3E49] x-tracking-[-0.5px]">Sleek. Simple. Extraordinary</h1>
+                    <p class="x-font-light x-text-[18px] mdt:x-text-[24px] x-leading-[24px] mdt:x-leading-[32px] x-text-[#282828]">Ditch your clunky, breakable tissue <br class="mdt:x-hidden">covers for <br class="x-hidden mdt:x-block">something better.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="x-flex x-flex-col x-justify-center x-items-center x-bg-[#ECEFF2] x-w-full">
+            <div class="x-w-full gift-essentials-img x-h-[440px] mdt:x-h-[566px]">
+            </div>
+            <div class="x-w-full">
+                <div class="x-flex x-flex-col x-gap-[8px] mdt:x-gap-[24px] x-py-[32px] x-pb-[72px] mdt:x-py-[64px] mdt:x-pb-[64px]">
+                    <h1 class="x-font-light x-text-[24px] mdt:x-text-[40px] x-leading-[32px] mdt:x-leading-[48px] x-text-[#3D3E49] x-tracking-[-0.5px]">Gift Essentials.</h1>
+                    <p class="x-font-light x-text-[18px] mdt:x-text-[24px] x-leading-[24px] mdt:x-leading-[32px] x-text-[#282828]">Choose a housewarming gift, get well <br class="mdt:x-hidden">wish, or <br class="x-hidden mdt:x-block">self-care purchase.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="x-flex x-flex-col x-justify-center x-items-center x-bg-[#F6E6DE] x-w-full">
+            <div class="x-w-full switch-over-img x-h-[440px] mdt:x-h-[566px]">
+            </div>
+            <div class="x-w-full">
+                <div class="x-flex x-flex-col x-gap-[8px] mdt:x-gap-[24px] x-py-[32px] x-pb-[72px] mdt:x-py-[64px] mdt:x-pb-[64px]">
+                    <h1 class="x-font-light x-text-[24px] mdt:x-text-[40px] x-leading-[32px] mdt:x-leading-[48px] x-text-[#3D3E49] x-tracking-[-0.5px]">Switch Over.</h1>
+                    <p class="x-font-light x-text-[18px] mdt:x-text-[24px] x-leading-[24px] mdt:x-leading-[32px] x-text-[#282828]">Small changes make a big impact.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>

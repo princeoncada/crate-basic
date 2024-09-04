@@ -5,44 +5,44 @@
 			"settings": {
 				"title": "Hero Banner"
 			}
-		},
-		"main-products": {
-			"type": "a-custom-main-products",
-			"settings": {
-				"title": "Main Products"
-			}
-		},
-		"multi-row": {
-			"type": "a-custom-multi-row",
+		}, 
+        "main-products": {
+            "type": "a-custom-main-products",
             "settings": {
-                "title": "Multi-Row"
+                "title": "Main Products"
             }
-		},
-		"features": {
-			"type": "a-custom-features",
-			"settings": {
-				"title": "Features"
-			}
-		},
-		"rich-text": {
-			"type": "a-custom-rich-text",
-			"settings": {
+        },
+        "multi-row": {
+            "type": "a-custom-multi-row",
+            "settings": {
+                "title": "Multi Row"
+            }   
+        },
+        "custom-features": {
+            "type": "a-custom-features",
+            "settings": {
+                "title": "Features"
+            }
+        },
+        "custom-rich-text": {
+            "type": "a-custom-rich-text",
+            "settings": {
                 "title": "Rich Text"
             }
-		},
-		"call-to-action": {
-			"type": "a-custom-call-to-action",
+        },
+        "custom-call-to-action": {
+            "type": "a-custom-call-to-action",
             "settings": {
                 "title": "Call to Action"
             }
-		}
+        }
 	},
 	"order": [
 		"hero-banner",
-		"main-products",
-		"multi-row",
-		"features",
-		"rich-text",
-		"call-to-action"
+        "main-products",
+        "multi-row",
+        "custom-features",
+        "custom-rich-text",
+        "custom-call-to-action"
 	]
 }

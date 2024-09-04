@@ -1,26 +1,49 @@
 <style>
     .hero-bg {
         background-color: black;
-        background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+        background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
         url({{ 'bg-hero.jpeg' | asset_img_url: "1415x1070" }});
-        background-size: 100%;
-        background-position: 50% 80%;
+        background-size: 180%;
+        background-position: 20% 80%;
     }
+    
+    @media (min-width: 990px) {
+        .hero-bg {
+            background-size: 110%;
+            background-position: 20% 95%;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .hero-bg {
+            background-size: 100%;
+            background-position: 20% 80%;
+        }
+    }
+    
 </style>
 
 <section>
-    <div class="x-flex x-flex-row x-justify-center x-items-end hero-bg x-h-[700px] x-pb-40">
-        <div class="x-flex x-flex-col x-font-lora x-text-[56px] x-text-white x-text-center x-gap-[28px]">
-            <div class="x-flex x-flex-row x-justify-center x-gap-8">
+    <div class="x-flex x-flex-row x-justify-center x-items-end hero-bg">
+        <div class="x-flex x-flex-col x-text-white x-text-center x-gap-[24px] md:x-gap-[28px] x-py-[209px] md:x-py-[171px] lg:x-py-[228px] x-px-[29px] md:x-px-[85px] lg:x-px-[292px]">
+            <div class="x-leading-[40px] x-font-light x-text-[30px] x-font-lora md:x-text-[48px] lg:x-text-[56px] md:x-leading-[64px]">
+                ERGONOMIC DESIGN <br class="md:x-hidden">FOR <br class="x-hidden md:x-block">HOME AND OFFICE
+            </div>
+            <div class="x-flex x-flex-row x-justify-center x-gap-[32px] md:x-hidden">
+                <div>
+                    {% render 'a-hero-house-m' %}
+                </div>
+                <div>
+                    {% render 'a-hero-desktop-m' %}
+                </div>
+            </div>
+            <div class="x-hidden md:x-flex x-flex-row x-justify-center x-gap-[32px]">
                 <div>
                     {% render 'a-hero-house' %}
                 </div>
                 <div>
                     {% render 'a-hero-desktop' %}
                 </div>
-            </div>
-            <div class="x-leading-[64px] x-font-light">
-                ERGONOMIC DESIGN FOR <br>HOME AND OFFICE
             </div>
         </div>
     </div>

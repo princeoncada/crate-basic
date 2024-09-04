@@ -15,6 +15,12 @@ module.exports = {
                 'lora': ['Lora'],
             },
 		},
+        screens: {
+            'sm': '425px',
+            'mdt': '768px',
+            'md': '990px',
+            'lg': '1280px'
+        }
 	},
 	plugins: [],
 }
