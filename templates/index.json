@@ -1,48 +1,52 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
-	"sections": {
-		"hero-banner": {
-			"type": "a-custom-hero-banner",
-			"settings": {
-				"title": "Hero Banner"
-			}
-		}, 
-        "main-products": {
-            "type": "a-custom-main-products",
-            "settings": {
-                "title": "Main Products"
-            }
-        },
-        "multi-row": {
-            "type": "a-custom-multi-row",
-            "settings": {
-                "title": "Multi Row"
-            }   
-        },
-        "custom-features": {
-            "type": "a-custom-features",
-            "settings": {
-                "title": "Features"
-            }
-        },
-        "custom-rich-text": {
-            "type": "a-custom-rich-text",
-            "settings": {
-                "title": "Rich Text"
-            }
-        },
-        "custom-call-to-action": {
-            "type": "a-custom-call-to-action",
-            "settings": {
-                "title": "Call to Action"
-            }
-        }
-	},
-	"order": [
-		"hero-banner",
-        "main-products",
-        "multi-row",
-        "custom-features",
-        "custom-rich-text",
-        "custom-call-to-action"
-	]
+  "sections": {
+    "hero-banner": {
+      "type": "a-custom-hero-banner",
+      "settings": {
+      }
+    },
+    "main-products": {
+      "type": "a-custom-main-products",
+      "settings": {
+        "custom_link": "shopify:\/\/products\/tissue-sleeve"
+      }
+    },
+    "multi-row": {
+      "type": "a-custom-multi-row",
+      "settings": {
+      }
+    },
+    "custom-features": {
+      "type": "a-custom-features",
+      "settings": {
+      }
+    },
+    "custom-rich-text": {
+      "type": "a-custom-rich-text",
+      "settings": {
+      }
+    },
+    "custom-call-to-action": {
+      "type": "a-custom-call-to-action",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero-banner",
+    "main-products",
+    "multi-row",
+    "custom-features",
+    "custom-rich-text",
+    "custom-call-to-action"
+  ]
 }
