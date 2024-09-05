@@ -145,9 +145,9 @@
         "settings": {
           "story_link": "\/",
           "product_link": "shopify:\/\/products\/tissue-sleeve",
-          "terms_link": "",
-          "privacy_link": "",
-          "return_link": ""
+          "terms_link": "shopify:\/\/pages\/terms-of-service",
+          "privacy_link": "shopify:\/\/pages\/privacy-policy",
+          "return_link": "shopify:\/\/pages\/return-policy"
         }
       }
     },
