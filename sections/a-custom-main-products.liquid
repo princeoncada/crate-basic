@@ -31,37 +31,13 @@
                     <div class="x-flex x-flex-col x-gap-[14px]">
                         <p class="x-font-jost x-text-[18px] x-leading-7 x-text-[#4F4F4F]">Available in all 5 colors.</p>
                         <div class="x-flex x-flex-row x-gap-4">
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" checked/>
-                                <div class="x-w-10 x-h-10 x-bg-[#2A2A2A] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#7C7C7C] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#C6C6C6] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#C1AC88] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#B1795D] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
+                            {% render 'a-color-rows' %}
                         </div>
                     </div>
                 </div>
-                <button class="x-text-lg x-text-white x-bg-[#3D3E49] x-font-medium x-tracking-[3%] x-rounded-lg x-py-[18px]">
+                <a class="x-text-lg x-text-white x-bg-[#3D3E49] x-font-medium x-tracking-[3%] x-rounded-lg x-py-[18px] x-flex x-justify-center" href={{ section.settings.custom_link }}>
                     BUY
-                </button>
+                </a>
             </div>
         </div>
 
@@ -83,37 +59,13 @@
                     <div class="x-flex x-flex-col x-gap-[14px]">
                         <p class="x-font-jost x-text-[18px] x-leading-7 x-text-[#4F4F4F]">Available in all 5 colors.</p>
                         <div class="x-flex x-flex-row x-gap-4">
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" checked/>
-                                <div class="x-w-10 x-h-10 x-bg-[#2A2A2A] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#7C7C7C] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#C6C6C6] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#C1AC88] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-10 x-h-10 x-bg-[#B1795D] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
+                            {% render 'a-color-rows' %}
                         </div>
                     </div>
                 </div>
-                <button class="x-text-lg x-text-white x-bg-[#3D3E49] x-font-medium x-tracking-[3%] x-rounded-lg x-py-[18px]">
+                <a class="x-text-lg x-text-white x-bg-[#3D3E49] x-font-medium x-tracking-[3%] x-rounded-lg x-py-[18px] x-flex x-justify-center" href={{ section.settings.custom_link }}>
                     BUY
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -133,37 +85,13 @@
                     <div class="x-flex x-flex-col x-gap-[14px]">
                         <p class="x-font-light md:x-font-normal x-text-[18px] x-leading-[24px] x-text-[#4F4F4F]">Available in all 5 colors.</p>
                         <div class="x-flex x-flex-row x-justify-center x-gap-[16px]">
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" checked/>
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#2A2A2A] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#7C7C7C] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#C6C6C6] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#C1AC88] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="rect-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#B1795D] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
+                            {% render 'a-color-rows' %}
                         </div>
                     </div>
                 </div>
-                <button class="x-font-medium x-text-[16px] x-leading-[24px] x-tracking-[3%] x-text-white x-bg-[#3D3E49] x-py-[18px] x-rounded-[8px]">
+                <a class="x-font-medium x-text-[16px] x-leading-[24px] x-tracking-[3%] x-text-white x-bg-[#3D3E49] x-py-[18px] x-rounded-[8px] href={{ section.settings.custom_link }}">
                     BUY
-                </button>
+                </a>
             </div>
         </div>
 
@@ -181,38 +109,33 @@
                     <div class="x-flex x-flex-col x-gap-[14px]">
                         <p class="x-font-light md:x-font-normal x-text-[18px] x-leading-[24px] x-text-[#4F4F4F]">Available in all 5 colors.</p>
                         <div class="x-flex x-flex-row x-justify-center x-gap-[16px]">
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" checked/>
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#2A2A2A] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#7C7C7C] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#C6C6C6] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#C1AC88] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="square-color" class="x-hidden x-peer" />
-                                <div class="x-w-[40px] x-h-[40px] x-bg-[#B1795D] x-rounded-full peer-checked:x-ring-2 peer-checked:x-ring-gray-400 x-border-2 x-border-white">
-                               </div>
-                            </label>
+                            {% render 'a-color-rows' %}
                         </div>
                     </div>
                 </div>
-                <button class="x-font-medium x-text-[16px] x-leading-[24px] x-tracking-[3%] x-text-white x-bg-[#3D3E49] x-py-[18px] x-rounded-[8px]">
+                <a class="x-font-medium x-text-[16px] x-leading-[24px] x-tracking-[3%] x-text-white x-bg-[#3D3E49] x-py-[18px] x-rounded-[8px] href={{ section.settings.custom_link }}">
                     BUY
-                </button>
+                </a>
             </div>
         </div>
     </div>
 </section>
+
+{% schema %}
+    {
+      "name": "Main Products Section",
+      "settings": [
+        {
+          "type": "url",
+          "id": "custom_link",
+          "label": "Custom Link"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Custom Link Section",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
