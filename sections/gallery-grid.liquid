@@ -1,5 +1,5 @@
 <section class="gallery-section" style="padding: 40px 20px;">
-  <div class="gallery-container" style="overflow-x: auto; overflow-y: hidden; padding-bottom: 20px;">
+  <div class="gallery-container">
     <div class="gallery-grid">
       {% for block in section.blocks %}
       <div class="gallery-item">
@@ -21,17 +21,10 @@
   .gallery-grid {
     display: grid;
     gap: 30px; /* Space between grid items */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
-    grid-auto-flow: column; /* Ensures horizontal scrolling */
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Default to 4 columns */
   }
 
-  @media (min-width: 1440px) {
-    .gallery-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns for desktop (1440px and above) */
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (max-width: 1439px) {
     .gallery-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns for tablets (768px to 1439px) */
     }
