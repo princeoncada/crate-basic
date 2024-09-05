@@ -143,6 +143,11 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "story_link": "shopify:\/\/collections\/frontpage",
+          "product_link": "shopify:\/\/products\/tissue-sleeve",
+          "terms_link": "",
+          "privacy_link": "",
+          "return_link": ""
         }
       }
     },
