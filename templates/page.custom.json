@@ -22,37 +22,73 @@
         "image_block_bgrMJB": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Luxe-white_007c4a73-a522-4b4d-bcae-34de1021208c.jpg"
+            "image": "shopify:\/\/shop_images\/Luxe-white_007c4a73-a522-4b4d-bcae-34de1021208c.jpg",
+            "image_width": "500px",
+            "image_height": "400px",
+            "image_border_radius": "10px",
+            "border": "none",
+            "box_shadow": "none",
+            "border_radius": "10px"
           }
         },
         "image_block_jTwDRj": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Small-Tissue-box-caramel_6416716c-09d7-4077-b829-716be2f89bbf.jpg"
+            "image": "shopify:\/\/shop_images\/Small-Tissue-box-caramel_6416716c-09d7-4077-b829-716be2f89bbf.jpg",
+            "image_width": "300px",
+            "image_height": "300px",
+            "image_border_radius": "10px",
+            "border": "none",
+            "box_shadow": "none",
+            "border_radius": "10px"
           }
         },
         "image_block_nd4rUk": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LG-Tissue-box-Dove-taupe_9b514be8-74be-4dc4-a4f4-b78cc571eae9.jpg"
+            "image": "shopify:\/\/shop_images\/LG-Tissue-box-Dove-taupe_9b514be8-74be-4dc4-a4f4-b78cc571eae9.jpg",
+            "image_width": "300px",
+            "image_height": "300px",
+            "image_border_radius": "10px",
+            "border": "none",
+            "box_shadow": "none",
+            "border_radius": "10px"
           }
         },
         "image_block_rhpL3P": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Small-Tissue-box-black_3241bd53-3043-4729-b6b4-2298e61754f2.jpg"
+            "image": "shopify:\/\/shop_images\/Small-Tissue-box-black_3241bd53-3043-4729-b6b4-2298e61754f2.jpg",
+            "image_width": "300px",
+            "image_height": "300px",
+            "image_border_radius": "10px",
+            "border": "none",
+            "box_shadow": "none",
+            "border_radius": "10px"
           }
         },
         "image_block_nxNEUA": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LargeTissue-box-Caramel_221172a4-5830-42f2-a715-4d8b1756a01e.jpg"
+            "image": "shopify:\/\/shop_images\/LargeTissue-box-Caramel_221172a4-5830-42f2-a715-4d8b1756a01e.jpg",
+            "image_width": "300px",
+            "image_height": "300px",
+            "image_border_radius": "10px",
+            "border": "none",
+            "box_shadow": "none",
+            "border_radius": "10px"
           }
         },
         "image_block_JdGphU": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Matte-Black_54583c53-ebf5-47dd-9f9a-25daaf6a5675.jpg"
+            "image": "shopify:\/\/shop_images\/Matte-Black_54583c53-ebf5-47dd-9f9a-25daaf6a5675.jpg",
+            "image_width": "300px",
+            "image_height": "300px",
+            "image_border_radius": "10px",
+            "border": "none",
+            "box_shadow": "none",
+            "border_radius": "10px"
           }
         }
       },
