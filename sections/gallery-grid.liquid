@@ -1,13 +1,13 @@
-<section class="gallery-section">
-  <div class="gallery-grid">
+<section class="gallery-section" style="padding: 40px 20px;">
+  <div class="gallery-grid" style="display: grid; gap: 30px;">
     {% for block in section.blocks %}
-    <div class="gallery-item">
-      <img src="{{ block.settings.image | img_url: '500x500' }}" alt="Gallery image">
+    <div class="gallery-item" style="display: flex; justify-content: center; align-items: center;">
+      <img src="{{ block.settings.image | img_url: '500x500' }}" alt="Gallery image" 
+           style="width: {{ section.settings.image_width }}; height: {{ section.settings.image_height }}; object-fit: cover; border-radius: 10px;">
     </div>
     {% endfor %}
   </div>
 </section>
-
 <style>
   .gallery-section {
     padding: 40px 20px; /* Padding around the entire gallery */
@@ -67,7 +67,22 @@
 {% schema %}
 {
   "name": "Responsive Gallery Grid",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "image_width",
+      "label": "Image Width",
+      "default": "300px",
+      "info": "Enter the width of the gallery images. Example: 300px or 50%"
+    },
+    {
+      "type": "text",
+      "id": "image_height",
+      "label": "Image Height",
+      "default": "300px",
+      "info": "Enter the height of the gallery images. Example: 300px or 50%"
+    }
+  ],
   "blocks": [
     {
       "type": "image_block",
@@ -77,7 +92,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Upload Image",
-          "info": "Select an image for the gallery. Recommended size: 500x500 pixels."
+          "info": "Select an image for the gallery."
         }
       ]
     }
@@ -95,3 +110,4 @@
   ]
 }
 {% endschema %}
+
