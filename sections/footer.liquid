@@ -8,9 +8,9 @@
                 <div class="x-flex x-flex-col x-gap-[8px] x-text-[14px] x-leading-[20px]">
                     <p>© 2024. All rights reserved.</p>
                     <div class="x-flex x-flex-row x-gap-[16px]">
-                        <a href="">Terms</a>
-                        <a href="">Privacy</a>
-                        <a href="">Return Policy</a>
+                        <a href={{ section.settings.terms_link }}>Terms</a>
+                        <a href={{ section.settings.privacy_link }}>Privacy</a>
+                        <a href={{ section.settings.return_link }}>Return Policy</a>
                     </div>
                 </div>
             </div>
@@ -19,24 +19,22 @@
                 <div class="x-flex x-flex-col x-gap-[16px]">
                     <h1 class="x-font-jost x-text-[#E0E0E0]">SHOP</h1>
                     <div class="x-flex x-flex-col x-gap-[8px]">
-                        <a href="">Rectangular</a>
-                        <a href="">Square</a>
+                        <a href={{ section.settings.product_link }}>Rectangular</a>
+                        <a href={{ section.settings.product_link }}>Square</a>
                     </div>
                 </div>
                 <div class="x-flex x-flex-col x-gap-[16px]">
                     <h1 class="x-font-jost x-text-[#E0E0E0]">USERS</h1>
                     <div class="x-flex x-flex-col x-gap-[8px]">
-                        <a href="">Account</a>
-                        <a href="">Orders</a>
-                        <a href="">Saved</a>
+                        <a href={{ routes.account_url }}>Account</a>
+                        <a href={{ routes.cart_url }}>Cart</a>
                     </div>
                 </div>
                 <div class="x-flex x-flex-col x-gap-[16px]">
                     <h1 class="x-font-jost x-text-[#E0E0E0]">COMPANY</h1>
                     <div class="x-flex x-flex-col x-gap-[8px]">
-                        <a href="">Story</a>
-                        <a href="">Blog</a>
-                        <a href=""><i class='bx bxl-instagram x-text-[20px]'></i></a>
+                        <a href={{ section.settings.story_link }}>Story</a>
+                        <a href={{ settings.social_instagram_link }}><i class='bx bxl-instagram x-text-[20px]'></i></a>
                     </div>
                 </div>
             </div>
@@ -52,16 +50,15 @@
                 <div class="x-flex x-flex-col x-gap-[16px] x-min-w-[100px]">
                     <p class="x-text-[#E0E0E0] x-text-[16px] x-leading-[24px]">SHOP</p>
                     <div class="x-flex x-flex-col x-gap-[16px] x-text-[18px] x-leading-[24px]">
-                        <a href="">Rectangular</a>
-                        <a href="">Square</a>
+                        <a href={{ section.settings.product_link }}>Rectangular</a>
+                        <a href={{ section.settings.product_link }}>Square</a>
                     </div>
                 </div>
                 <div class="x-flex x-flex-col x-gap-[16px]">
                     <p class="x-text-[#E0E0E0] x-text-[16px] x-leading-[24px]">USERS</p>
                     <div class="x-flex x-flex-col x-gap-[16px] x-text-[18px] x-leading-[24px]">
-                        <a href="">Account</a>
-                        <a href="">Orders</a>
-                        <a href="">Saved</a>
+                        <a href={{ routes.account_url }}>Account</a>
+                        <a href={{ routes.cart_url }}>Cart</a>
                     </div>
                 </div>
             </div>
@@ -70,16 +67,15 @@
                 <div class="x-flex x-flex-col x-gap-[16px] x-min-w-[100px]">
                     <p class="x-text-[#E0E0E0] x-text-[16px] x-leading-[24px]">SHOP</p>
                     <div class="x-flex x-flex-col x-gap-[16px] x-text-[18px] x-leading-[24px]">
-                        <a href="">Story</a>
-                        <a href="">Blog</a>
-                        <a href="">Terms</a>
+                        <a href={{ section.settings.story_link }}>Story</a>
+                        <a href={{ settings.social_instagram_link }}><i class='bx bxl-instagram x-text-[20px]'></i></a>
                     </div>
                 </div>
                 <div class="x-flex x-flex-col x-justify-end">
                     <div class="x-flex x-flex-col x-gap-[16px] x-text-[18px] x-leading-[24px]">
-                        <a href="">Privacy</a>
-                        <a href="">Return Policy</a>
-                        <a href=""><i class='bx bxl-instagram x-text-[20px]'></i></a>
+                        <a href={{ section.settings.terms_link }}>Terms</a>
+                        <a href={{ section.settings.privacy_link }}>Privacy</a>
+                        <a href={{ section.settings.return_link }}>Return Policy</a>
                     </div>
                 </div>
             </div>
@@ -90,3 +86,39 @@
         </div>
     </div>
 </section>
+
+{% schema %}
+    {
+      "name": "Footer",
+      "settings": [
+        {
+          "type": "url",
+          "id": "story_link",
+          "label": "Story Link"
+        },
+        {
+          "type": "url",
+          "id": "product_link",
+          "label": "Product Link"
+        },
+        {
+            "type": "url",
+            "id": "terms_link",
+            "label": "Terms Link"
+        },
+        {
+            "type": "url",
+            "id": "privacy_link",
+            "label": "Privacy Link"
+        },
+        {
+            "type": "url",
+            "id": "return_link",
+            "label": "Return Link"
+        }
+      ],
+      "presets": []
+    }
+    {% endschema %}
+
+    
