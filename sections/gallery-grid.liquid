@@ -9,26 +9,43 @@
 </section>
 
 {% style %}
+<section class="gallery-section">
+  <div class="gallery-grid">
+    {% for block in section.blocks %}
+    <div class="gallery-item">
+      <img src="{{ block.settings.image | img_url: '500x' }}" alt="Gallery image">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .gallery-section {
+    padding: 40px 20px; /* Padding for the section */
+  }
+
   .gallery-grid {
     display: grid;
-    gap: 20px;
+    gap: 30px; /* Gap between grid items */
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1440px) {
     .gallery-grid {
-      grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     .gallery-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 25px; 
     }
   }
 
-  @media (max-width: 767px) {
+  @media (min-width: 390px) and (max-width: 767px) {
     .gallery-grid {
-      grid-template-columns: 1fr; /* 1 column on mobile */
+      grid-template-columns: 1fr;
+      gap: 20px; 
     }
   }
 
@@ -36,21 +53,28 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 10px; /* Add a bit of rounding to the image corners */
   }
+</style>
+
 {% endstyle %}
+{% javascript %}
+  // pwede pud ka ani choy hahaha
+  {% endjavascript %}
 {% schema %}
 {
-  "name": "Gallery Grid",
+  "name": "Responsive Gallery Grid",
   "settings": [],
   "blocks": [
     {
       "type": "image_block",
-      "name": "Image",
+      "name": "Gallery Image",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Select an image"
+          "label": "Upload Image",
+          "info": "Select an image for the gallery. Recommended size: 500x500 pixels."
         }
       ]
     }
@@ -58,7 +82,12 @@
   "presets": [
     {
       "name": "Gallery Grid",
-      "category": "Custom"
+      "category": "Custom Sections",
+      "blocks": [
+        {
+          "type": "image_block"
+        }
+      ]
     }
   ]
 }
