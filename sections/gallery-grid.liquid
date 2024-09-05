@@ -1,9 +1,9 @@
 <section class="gallery-section" style="padding: 40px 20px;">
   <div class="gallery-grid">
     {% for block in section.blocks %}
-    <div class="gallery-item">
+    <div class="gallery-item" style="border: {{ block.settings.border }}; border-radius: {{ block.settings.border_radius }}; box-shadow: {{ block.settings.box_shadow }};">
       <img src="{{ block.settings.image | img_url: '500x500' }}" alt="Gallery image" 
-           style="width: {{ section.settings.image_width }}; height: {{ section.settings.image_height }}; object-fit: cover; border-radius: 10px;">
+           style="width: {{ block.settings.image_width }}; height: {{ block.settings.image_height }}; object-fit: cover; border-radius: {{ block.settings.image_border_radius }};">
     </div>
     {% endfor %}
   </div>
@@ -13,7 +13,7 @@
   .gallery-grid {
     display: grid;
     gap: 30px; /* Space between grid items */
-    grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns by default */
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Default to 4 columns */
   }
 
   @media (max-width: 1439px) {
@@ -33,13 +33,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  .gallery-item img {
-    width: 300px; /* Fixed width for the image */
-    height: 300px; /* Fixed height for the image */
-    object-fit: cover; /* Ensures the image maintains aspect ratio */
-    border-radius: 10px; /* Adds a bit of rounding to the corners */
-  }
 </style>
 
 {% schema %}
@@ -49,16 +42,16 @@
     {
       "type": "text",
       "id": "image_width",
-      "label": "Image Width",
+      "label": "Default Image Width",
       "default": "300px",
-      "info": "Enter the width of the gallery images. Example: 300px or 50%"
+      "info": "Enter the default width of the gallery images. Example: 300px or 50%"
     },
     {
       "type": "text",
       "id": "image_height",
-      "label": "Image Height",
+      "label": "Default Image Height",
       "default": "300px",
-      "info": "Enter the height of the gallery images. Example: 300px or 50%"
+      "info": "Enter the default height of the gallery images. Example: 300px or 50%"
     }
   ],
   "blocks": [
@@ -71,6 +64,48 @@
           "id": "image",
           "label": "Upload Image",
           "info": "Select an image for the gallery."
+        },
+        {
+          "type": "text",
+          "id": "image_width",
+          "label": "Image Width",
+          "default": "300px",
+          "info": "Enter the width of this image. Example: 300px or 50%"
+        },
+        {
+          "type": "text",
+          "id": "image_height",
+          "label": "Image Height",
+          "default": "300px",
+          "info": "Enter the height of this image. Example: 300px or 50%"
+        },
+        {
+          "type": "text",
+          "id": "image_border_radius",
+          "label": "Image Border Radius",
+          "default": "10px",
+          "info": "Enter the border radius for this image. Example: 10px"
+        },
+        {
+          "type": "text",
+          "id": "border",
+          "label": "Border",
+          "default": "none",
+          "info": "Enter border style for the image container. Example: 1px solid #ddd"
+        },
+        {
+          "type": "text",
+          "id": "box_shadow",
+          "label": "Box Shadow",
+          "default": "none",
+          "info": "Enter box shadow style for the image container. Example: 0px 4px 8px rgba(0,0,0,0.1)"
+        },
+        {
+          "type": "text",
+          "id": "border_radius",
+          "label": "Container Border Radius",
+          "default": "10px",
+          "info": "Enter border radius for the container. Example: 10px"
         }
       ]
     }
