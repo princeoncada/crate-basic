@@ -38,6 +38,7 @@
     "custom-call-to-action": {
       "type": "a-custom-call-to-action",
       "settings": {
+        "cta_link": "shopify:\/\/pages\/lifestyle"
       }
     }
   },
