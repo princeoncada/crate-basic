@@ -1,6 +1,6 @@
 <section class="gallery-section" style="padding: 40px 20px;">
-  <div class="gallery-container" style="overflow-x: auto; overflow-y: hidden;">
-    <div class="gallery-grid" style="display: grid; gap: 30px; grid-auto-flow: column;">
+  <div class="gallery-container" style="overflow-x: auto; overflow-y: hidden; white-space: nowrap; padding-bottom: 20px;">
+    <div class="gallery-grid" style="display: flex; gap: 30px;">
       {% for block in section.blocks %}
       <div class="gallery-item" style="flex: 0 0 auto; display: flex; justify-content: center; align-items: center;">
         <img src="{{ block.settings.image | img_url: '500x500' }}" alt="Gallery image" 
@@ -16,36 +16,33 @@
     overflow-x: auto; /* Enables horizontal scrolling */
     overflow-y: hidden; /* Hides vertical scrollbar */
     white-space: nowrap; /* Prevents wrapping of grid items */
+    padding-bottom: 20px; /* Optional: Adds space at the bottom for better scrolling visibility */
   }
 
   .gallery-grid {
-    display: grid;
+    display: flex; /* Horizontal layout */
     gap: 30px; /* Space between grid items */
-    grid-auto-flow: column; /* Ensures items are placed in a horizontal flow */
   }
 
   @media (min-width: 1440px) {
-    .gallery-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns for desktop (1440px and above) */
+    .gallery-item {
+      flex: 0 0 auto; /* Ensures item size */
     }
   }
 
   @media (min-width: 768px) and (max-width: 1439px) {
-    .gallery-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns for tablets (768px to 1439px) */
-      gap: 25px;
+    .gallery-item {
+      flex: 0 0 auto; /* Ensures item size */
     }
   }
 
   @media (max-width: 767px) {
-    .gallery-grid {
-      grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 column for mobile (up to 767px) */
-      gap: 20px;
+    .gallery-item {
+      flex: 0 0 auto; /* Ensures item size */
     }
   }
 
   .gallery-item {
-    flex: 0 0 auto; /* Ensures each item keeps its size */
     display: flex;
     justify-content: center;
     align-items: center;
