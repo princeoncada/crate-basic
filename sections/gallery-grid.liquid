@@ -1,52 +1,51 @@
 <section class="gallery-section" style="padding: 40px 20px;">
-  <div class="gallery-grid" style="display: grid; gap: 30px;">
-    {% for block in section.blocks %}
-    <div class="gallery-item" style="display: flex; justify-content: center; align-items: center;">
-      <img src="{{ block.settings.image | img_url: '500x500' }}" alt="Gallery image" 
-           style="width: {{ section.settings.image_width }}; height: {{ section.settings.image_height }}; object-fit: cover; border-radius: 10px;">
+  <div class="gallery-container" style="overflow-x: auto; overflow-y: hidden;">
+    <div class="gallery-grid" style="display: grid; gap: 30px; grid-auto-flow: column;">
+      {% for block in section.blocks %}
+      <div class="gallery-item" style="flex: 0 0 auto; display: flex; justify-content: center; align-items: center;">
+        <img src="{{ block.settings.image | img_url: '500x500' }}" alt="Gallery image" 
+             style="width: {{ section.settings.image_width }}; height: {{ section.settings.image_height }}; object-fit: cover; border-radius: 10px;">
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 </section>
+
 <style>
-  .gallery-section {
-    padding: 40px 20px; /* Padding around the entire gallery */
+  .gallery-container {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scrollbar */
+    white-space: nowrap; /* Prevents wrapping of grid items */
   }
 
   .gallery-grid {
     display: grid;
     gap: 30px; /* Space between grid items */
+    grid-auto-flow: column; /* Ensures items are placed in a horizontal flow */
   }
 
   @media (min-width: 1440px) {
     .gallery-grid {
-      grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop (1440px and above) */
+      grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns for desktop (1440px and above) */
     }
   }
 
   @media (min-width: 768px) and (max-width: 1439px) {
     .gallery-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets (768px to 1439px) */
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns for tablets (768px to 1439px) */
       gap: 25px;
     }
   }
 
-  @media (min-width: 390px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .gallery-grid {
-      grid-template-columns: 1fr; /* 1 column for mobile (390px to 767px) */
+      grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 column for mobile (up to 767px) */
       gap: 20px;
     }
   }
 
-  @media (max-width: 389px) {
-    .gallery-grid {
-      grid-template-columns: 1fr; /* 1 column for very small devices */
-      gap: 15px;
-    }
-  }
-
   .gallery-item {
-    width: 100%; /* Make the item take full width of its grid cell */
+    flex: 0 0 auto; /* Ensures each item keeps its size */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,10 +59,6 @@
   }
 </style>
 
-{% javascript %}
-  // pwede pud ka ani choy hahaha
-{% endjavascript %}
-  
 {% schema %}
 {
   "name": "Responsive Gallery Grid",
@@ -110,4 +105,3 @@
   ]
 }
 {% endschema %}
-
