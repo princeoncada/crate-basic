@@ -78,23 +78,52 @@
     %}
   {%- elsif picker_type == 'button' -%}
     <input
-      type="radio"
-      id="{{ input_id }}"
-      name="{{ input_name }}"
-      value="{{ value | escape }}"
-      form="{{ product_form_id }}"
-      {% if value.selected %}
+    type="radio"
+    id="{{ input_id }}"
+    name="{{ input_name }}"
+    value="{{ value | escape }}"
+    form="{{ product_form_id }}"
+    {% if value.selected %}
         checked
-      {% endif %}
-      {% if option_disabled %}
+    {% endif %}
+    {% if option_disabled %}
         class="disabled"
-      {% endif %}
-      {{ input_dataset }}
+    {% endif %}
+    {{ input_dataset }}
     >
-    <label for="{{ input_id }}">
-      {{ value -}}
-      {{ label_unavailable }}
-    </label>
+    {%- if option.name contains "Color" -%}
+        {% assign bg_color = "#2A2A2A" %}
+
+        {%- case value -%}
+            {%- when "Matte Black" -%}
+                {% assign bg_color = "#2A2A2A" %}
+            {%- when "Space Grey" -%}
+                {% assign bg_color = "#7C7C7C" %}
+            {%- when "Luxe White" -%}
+                {% assign bg_color = "#C6C6C6" %}
+            {%- when "Dove Taupe" -%}
+                {% assign bg_color = "#C1AC88" %}
+            {%- when "Mod Caramel" -%}
+                {% assign bg_color = "#B1795D" %}
+        {%- endcase -%}
+
+        <label class="x-py-[12px] x-px-[14px]" for="{{ input_id }}">
+            <div class="x-flex x-flex-row x-justify-center x-items-center x-gap-[8px]">
+                <div>
+                    <div class="x-w-[24px] x-h-[24px] x-bg-[{{ bg_color }}] x-rounded-full x-border-2 x-border-[#efecec]">
+                    </div>
+                </div>
+                <div>{{ value -}}</div>
+            </div>
+        {{ label_unavailable }} 
+        {% comment %} This is for individual stuffs {% endcomment %}
+        </label>
+    {%- else -%}
+        <label class="x-py-[17.5px] x-px-[17.5px]" for="{{ input_id }}">
+            {{ value -}}
+            {{ label_unavailable }} 
+        </label>
+    {%- endif -%}
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       id="{{ input_id }}"
