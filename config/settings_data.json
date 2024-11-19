@@ -1,15 +1,15 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/crate-logo_2fcd5ed7-5d34-431c-b4f6-dfb3acce72e1.png",
+    "logo": "shopify://shop_images/crate-logo_2fcd5ed7-5d34-431c-b4f6-dfb3acce72e1.png",
     "logo_width": 250,
     "type_header_font": "americana_n4",
     "heading_scale": 100,
@@ -110,7 +110,7 @@
     "brand_description": "",
     "brand_image_width": 100,
     "social_facebook_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/crateandbasics\/",
+    "social_instagram_link": "https://www.instagram.com/crateandbasics/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -143,17 +143,32 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "story_link": "\/",
-          "product_link": "shopify:\/\/products\/tissue-sleeve",
-          "terms_link": "shopify:\/\/pages\/terms-of-service",
-          "privacy_link": "shopify:\/\/pages\/privacy-policy",
-          "return_link": "shopify:\/\/pages\/return-policy"
+          "story_link": "/",
+          "product_link": "shopify://products/tissue-sleeve",
+          "terms_link": "shopify://pages/terms-of-service",
+          "privacy_link": "shopify://pages/privacy-policy",
+          "return_link": "shopify://pages/return-policy"
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
+    "blocks": {
+      "18387101310985349768": {
+        "type": "shopify://apps/progus-store-locator/blocks/app-embed/d7896016-8cc9-45e0-860e-ba85ba3d5be4",
+        "disabled": false,
+        "settings": {
+          "show_title": true,
+          "our_locations": "Our locations",
+          "text_color": "#ffffff",
+          "bg_color": "#000000",
+          "icon": "map-marker",
+          "icon_color": "#ffffff",
+          "size": "2",
+          "shape": "2",
+          "position": "2"
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
