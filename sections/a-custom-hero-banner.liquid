@@ -3,8 +3,21 @@
         background-color: black;
         background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
         url({{ 'bg-hero.jpeg' | asset_img_url: "1415x1070" }});
-        background-size: 180%;
-        background-position: 20% 80%;
+        background-size: 280%;
+        background-position: 48% 300%;
+    }
+
+    @media (min-width: 370px) {
+        .hero-bg {
+            background-position: 48% 100%;
+        }
+    }
+
+    @media (min-width: 425px) {
+        .hero-bg {
+            background-size: 180%;
+            background-position: 20% 80%;
+        }
     }
     
     @media (min-width: 990px) {
